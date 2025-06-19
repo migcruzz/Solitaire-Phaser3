@@ -1,16 +1,19 @@
 {
-  "name": "game",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "phaser": "^3.80.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@devshareacademy/eslint-config": "^0.0.18",
+    "@devshareacademy/prettier-config": "^0.0.6",
+    "@devshareacademy/tsconfig": "^0.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "vite": "^6.3.5"
   }
 }
