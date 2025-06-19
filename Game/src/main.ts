@@ -60,7 +60,7 @@ function testRecycle(): void {
         if (card) discard.push(card);
     }
     (deck as any).discardPile = discard;
-    deck.recycle();
+    deck.reset();
     console.assert(deck.drawPile.length === 52, 'After recycling, draw pile should have 52 cards');
     console.assert(deck.discardPile.length === 0, 'Discard pile should be empty after recycling');
     console.log('Recycle tests passed');

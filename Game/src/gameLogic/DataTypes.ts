@@ -1,22 +1,24 @@
-export const SUITS = ['HEART', 'DIAMOND', 'SPADE', 'CLUB'] as const;
-export type CardSuit = typeof SUITS[number];
+export type CardSuit = keyof typeof CARD_SUIT;
 
-export const VALUES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
-export type CardValue = typeof VALUES[number];
+export const CARD_SUIT = {
+    HEART: 'HEART',
+    DIAMOND: 'DIAMOND',
+    SPADE: 'SPADE',
+    CLUB: 'CLUB',
+} as const;
 
-export const SUIT_COLORS = ['RED', 'BLACK'] as const;
-export type CardSuitColor = typeof SUIT_COLORS[number];
+export type CardValue = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13;
 
-export const CARD_SUIT_TO_COLOR: Record<CardSuit, CardSuitColor> = {
-    CLUB: 'BLACK',
-    SPADE: 'BLACK',
-    DIAMOND: 'RED',
-    HEART: 'RED',
-};
+export type CardSuitColor = keyof typeof CARD_SUIT_COLOR;
 
-SUITS.forEach(suit => {
-    const c: CardSuitColor = CARD_SUIT_TO_COLOR[suit];
-});
-VALUES.forEach(v => {
-    const cardValue: CardValue = v;
-});
+export const CARD_SUIT_COLOR = {
+    RED: 'RED',
+    BLACK: 'BLACK',
+} as const;
+
+export const CARD_SUIT_TO_COLOR = {
+    [CARD_SUIT.CLUB]: CARD_SUIT_COLOR.BLACK,
+    [CARD_SUIT.SPADE]: CARD_SUIT_COLOR.BLACK,
+    [CARD_SUIT.DIAMOND]: CARD_SUIT_COLOR.RED,
+    [CARD_SUIT.HEART]: CARD_SUIT_COLOR.RED,
+} as const;
