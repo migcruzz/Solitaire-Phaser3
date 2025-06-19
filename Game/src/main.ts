@@ -1,5 +1,5 @@
-import {Deck} from './gameLogic/Deck';
-import {Card} from './gameLogic/Card';
+import {Deck} from './gameLogic/algorithms/Deck';
+import {Card} from './gameLogic/algorithms/Card';
 
 export function runTests(): void {
     console.log('--- Running Solitaire Tests ---');
