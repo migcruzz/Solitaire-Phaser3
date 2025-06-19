@@ -42,4 +42,3 @@ live-server
 ```
 
 Now, your project should open in your browser!
-```
