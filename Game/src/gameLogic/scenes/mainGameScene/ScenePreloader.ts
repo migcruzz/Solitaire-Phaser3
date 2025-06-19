@@ -7,7 +7,7 @@ export class PreloadScene extends Phaser.Scene {
     }
 
     public preload(): void {
-        this.load.image(ASSET_KEYS.TITLE, '../../../public/assets/title.png');
+
         this.load.image(ASSET_KEYS.CLICK_TO_START, '../../../public/assets/clickToStart.png');
         this.load.spritesheet(ASSET_KEYS.CARDS, '../../../public/assets/cards.png', {
             frameWidth: CARD_WIDTH,

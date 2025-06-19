@@ -24,7 +24,18 @@ export class TitleScene extends Phaser.Scene {
     public create(): void {
         // Background
         this.add.rectangle(0, 0, this.scale.width, this.scale.height, 0x000000, 1).setOrigin(0);
-        this.add.image(this.scale.width / 2, 100, ASSET_KEYS.TITLE, 0);
+        this.add.text(
+            this.scale.width / 2,
+            100,
+            '🎹 Solitaire 🎹',
+            {
+                fontFamily: 'Arial',
+                fontSize: '54px',
+                color: '#ffffff',
+                align: 'center'
+            }
+        ).setOrigin(0.5, 0);
+
 
         // Initialize audio
         this.initializeAudio();
