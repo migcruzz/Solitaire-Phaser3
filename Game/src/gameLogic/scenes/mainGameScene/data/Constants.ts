@@ -1,5 +1,5 @@
-// Variables.ts
-export const DEBUG = true;
+// Constants.ts
+export const DEBUG = false;
 export const SCALE = 1.5;
 export const CARD_BACK_FRAME = 52;
 export const FOUNDATION_PILE_X_POSITIONS = [360, 425, 490, 555];
@@ -21,7 +21,6 @@ export const ZONE_TYPE = {
     FOUNDATION: 'FOUNDATION',
     TABLEAU: 'TABLEAU',
 } as const;
-
 
 
 export type ZoneType = keyof typeof ZONE_TYPE;

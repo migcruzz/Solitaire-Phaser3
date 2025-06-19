@@ -16,7 +16,7 @@ import {
     TABLEAU_PILE_Y_POSITION,
     ZONE_TYPE,
     ZoneType
-} from "./data/Variables";
+} from "./data/Constants";
 import {FoundationPile} from "../../algorithms/FoundationPile";
 import {Card} from "../../algorithms/Card";
 

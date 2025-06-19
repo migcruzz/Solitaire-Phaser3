@@ -40,7 +40,6 @@ export class TitleScene extends Phaser.Scene {
 
         // Version text
         this.add.text(20, this.scale.height - 30, 'v1.0.0', {
-            fontFamily: 'BetterPixels',
             fontSize: '18px',
             color: '#888888'
         }).setOrigin(0, 1);
@@ -90,7 +89,6 @@ export class TitleScene extends Phaser.Scene {
                 startY + (index * spacing),
                 item.text,
                 {
-                    fontFamily: 'BetterPixels',
                     fontSize: `${this.getOptimalFontSize()}px`,
                     color: '#FFFFFF'
                 }
@@ -122,7 +120,6 @@ export class TitleScene extends Phaser.Scene {
             150,
             'SETTINGS',
             {
-                fontFamily: 'BetterPixels',
                 fontSize: `${this.getOptimalFontSize() + 8}px`,
                 color: '#00FF00'
             }
@@ -148,7 +145,6 @@ export class TitleScene extends Phaser.Scene {
                 startY + (index * spacing),
                 item.text,
                 {
-                    fontFamily: 'BetterPixels',
                     fontSize: `${this.getOptimalFontSize() - 4}px`,
                     color: '#FFFFFF'
                 }
@@ -304,7 +300,6 @@ export class TitleScene extends Phaser.Scene {
             this.scale.height / 2,
             'SOLITAIRE GAME\n\nDeveloped by: Miguel Cruz\nEngine: Phaser 3\nFont: Better Pixels\n\nPress SPACE to continue',
             {
-                fontFamily: 'BetterPixels',
                 fontSize: '24px',
                 color: '#FFFFFF',
                 align: 'center',
