@@ -14,8 +14,8 @@ export class Card {
      * @param isFaceUp - Whether the card starts face-up (default: false)
      */
     constructor(
-        readonly suit: CardSuit,
-        readonly value: CardValue,
+        suit: CardSuit,
+        value: CardValue,
         isFaceUp = false
     ) {
         this.#faceUp = isFaceUp;
@@ -39,7 +39,7 @@ export class Card {
 
     /** The color of the card (red or black) based on its suit. */
     get color(): CardSuitColor {
-        return CARD_SUIT_TO_COLOR[this.#suit];
+        return CARD_SUIT_TO_COLOR[this.suit];
     }
 
     /**
@@ -52,6 +52,6 @@ export class Card {
 
     /** Returns a human-readable string, e.g. "Ace of Spades". */
     public toString(): string {
-        return `${this.#value} of ${this.#suit}`;
+        return `${this.value} of ${this.suit}`;
     }
 }

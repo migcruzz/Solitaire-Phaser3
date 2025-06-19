@@ -1,6 +1,4 @@
-// Deck.ts
-
-import {Card} from './card';
+import {Card} from './Card';
 import {SUITS, VALUES} from './DataTypes';
 import {shuffleArray} from './Shuffle';
 
@@ -15,6 +13,8 @@ export class Deck {
             VALUES.map(value => new Card(suit, value))
         );
         this.reset();
+        this.#drawPile = []
+        this.#discardPile = []
     }
 
     /** All cards in the deck (immutable). */

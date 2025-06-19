@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES2019",
     "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
+    "lib": [
+      "ES2019",
+      "DOM"
+    ],
     "sourceMap": true,
-    "outDir": "dist",
     "rootDir": "src",
+    "outDir": "dist",
     "esModuleInterop": true
   },
   "include": [
